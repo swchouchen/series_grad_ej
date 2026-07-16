@@ -1,0 +1,56 @@
+# Lista de ejercicios 1
+
+::: {#exr-I1 .Exercise}
+Clasifique las siguientes series (discreta o continua, univariada o multivariada) y justifique.
+
+a.  Índice diario de bolsa de valores durante el período de enero 1990 a diciembre 2010.
+b.  Registro de la marea en un lugar específico durante 30 días.
+c.  Presión sanguínea (sistólica y diastólica) de una mujer durante el embarazo.
+d.  Temperatura promedio diario durante el año 2019.
+e.  Registro diario de nacimiento y defunciones durante el año 2010.
+f.  Unidades de ropa vendidas en cinco sucursales por día de 2010 a 2022.
+:::
+
+::: {#exr-I2 .Exercise}
+En la base de datos `matricula.csv` se refiere a la matrícula de primer grado de los años 1957 a 2006, en Costa Rica.
+
+a.  Importe los datos a *R*.
+b.  Elabore un gráfico de la serie.
+c.  Comente sobre las características de la serie.
+:::
+
+::: {#exr-I3 .Exercise}
+En la base de datos `nacimiento.csv` se tienen las cifras de los nacimientos mensuales inscritos en Costa Rica de enero de 1990 a diciembre de 1995.
+
+a.  Importe los datos a *R*.
+b.  Elabore un gráfico de la serie.
+c.  Comente sobre las características de la serie.
+:::
+
+::: {#exr-I4 .Exercise}
+En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.
+
+a.  Importe los datos a *R*.
+b.  Elabore un gráfico de la serie.
+c.  Realice la descomposición clásica aditiva de la serie y comente.
+d.  Realice la descomposición STL de la serie y compare con el punto anterior.
+:::
+
+::: {#exr-I5 .Exercise}
+En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.
+
+a.  Importe los datos a *R*.
+b.  Elabore un gráfico de la serie.
+c.  Realice la descomposición clásica multiplicativa para la serie en el periodo 2001-2004.
+d.  Pronostique la serie para el año 2005 y calcule las medidas de precisión de estos pronósticos.
+:::
+
+::: {#exr-I8 .Exercise}
+8.  Tome una serie de su interés, utilice R para analizar descriptivamente dicha serie temporal.
+:::
+
+## Soluciones de ejercicios seleccionados
+
+@exr-I1 (a) discreta y univariada. (c) continua y bivariada. (e) discreta y bivariada.
+
+@exr-I4 Serie aditiva. Tendencia constante y estacionalidad.

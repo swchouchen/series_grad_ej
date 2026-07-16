@@ -1,0 +1,81 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "LISTA DE EJERCICIOS"
+  subtitle: "Series Cronológicas I"
+  author: 
+   - name: "Shu Wei Chou Chen"
+     email: "shuwei.chou@ucr.ac.cr"
+     affiliation: "Escuela de Estadística, Universidad de Costa Rica"
+  # cover-image: "figures/cover.jpg"
+  date: today 
+  date-format: "MMMM, YYYY"
+  chapters:
+    - index.qmd
+    - Lista_1.qmd
+    # - Lista_2.qmd
+    # - Lista_3.qmd
+    # - Lista_4.qmd    
+    # - Lista_5.qmd
+    # - Lista_6.qmd    
+    # - Lista_7.qmd    
+    # - Lista_8.qmd    
+    - references.qmd
+  # appendices:
+  #   - appendixA.qmd
+  search: true  
+  repo-url: https://github.com/swchouchen/series_grad_ej/
+  repo-actions: [edit]
+  # downloads: [pdf]
+lang: es
+bibliography: references.bib
+nocite: |
+  @*
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+  pdf:
+    documentclass: scrbook
+    papersize: letter    
+    geometry:
+      - left=20mm
+      - right=30mm
+    fontsize: 12pt
+    link-citations: true
+    colorlinks: true
+    toccolor: black
+    linkcolor: blue
+    citecolor: blue
+    urlcolor: blue
+    fig-pos: 'H'
+    keep-tex: true
+    template-partials: 
+      - title.tex
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+        \usepackage[nottoc]{tocbibind}
+        \usepackage{setspace}
+        \doublespacing
+        \usepackage[noblocks]{authblk}
+        \renewcommand*{\Authsep}{, }
+        \renewcommand*{\Authand}{, }
+        \renewcommand*{\Authands}{, }
+        \renewcommand\Affilfont{\small}
+    include-after-body: 
+      text: |
+        \printindex
+    lof: true
+    lot: true
+editor: visual
+number-depth: 3
+toc-title: "Índice general"
+toc-expand: 1
+number-sections: false
+execute: 
+  warning: false
+  echo: false

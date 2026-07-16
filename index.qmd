@@ -1,0 +1,20 @@
+# Prefacio {.unnumbered}
+
+Este documento compila un conjunto de ejercicios seleccionados para apoyar el curso de Series Cronológicas I.
+
+## Bases de datos
+
+En esta sección, presentamos archivos de series temporales que usaremos en esta práctica.
+
+1.  `nacimiento.csv`: La matrícula de primer grado de del año 1957 a 2006, en Costa Rica.
+2.  `matricula.csv`: Las cifras de los nacimientos mensuales inscritos en Costa Rica de enero de 1990 a diciembre de 1995.
+3.  `cardiovascular.csv`: Las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007
+4.  `ventas.csv`: Las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.
+5.  `exportacionesFOB.csv` se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.
+6.  `llamadas_Bowerman.csv`: Los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976.
+7.  `crestcolgate.dat` Series semanales de cuotas de mercado dentífrico de las marcas Colgate y Crest en los Estados Unidos de 1 de enero de 1958 al abril de 1963.
+8.  `petroleo.Rdata`: Datos semanales del precio de la gasolina por barril desde 2000 a mediado de 2010.
+9.  `produccion1.Rdata`: Dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012.
+10. `temperatura.csv`: Los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.
+
+Descarga de datos: [link](./datos.zip)

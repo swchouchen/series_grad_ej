@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "Lista_1.html",
+    "href": "Lista_1.html",
+    "title": "Lista de ejercicios 1",
+    "section": "",
+    "text": "Soluciones de ejercicios seleccionados\nEjercicio 1.1 (a) discreta y univariada. (c) continua y bivariada. (e) discreta y bivariada.\nEjercicio 1.4 Serie aditiva. Tendencia constante y estacionalidad.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lista de ejercicios 1</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_1.html#soluciones-de-ejercicios-seleccionados",
+    "href": "Lista_1.html#soluciones-de-ejercicios-seleccionados",
+    "title": "Lista de ejercicios 1",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. «Literate Programming». Comput. J. (USA) 27 (2): 97-111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lista de ejercicios 1</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Hernández, O. 2011. Introducción a Las Series Cronológicas.\nEditorial UCR.\n\n\nHyndman, R. J., and G. Athanasopoulos. 2021. Forecasting: Principles\nand Practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., and Clélia M. C. Toloi. 2006. Análise de Séries\nTemporais. 2da ed. Blucher.\n\n\nShumway, R., and D. Stoffer. 2016. Time Series Analysis and Its\nApplications. 4ta ed. Springer.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LISTA DE EJERCICIOS",
+    "section": "",
+    "text": "Prefacio\nEste documento compila un conjunto de ejercicios seleccionados para apoyar el curso de Series Cronológicas I.",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "index.html#bases-de-datos",
+    "href": "index.html#bases-de-datos",
+    "title": "LISTA DE EJERCICIOS",
+    "section": "Bases de datos",
+    "text": "Bases de datos\nEn esta sección, presentamos archivos de series temporales que usaremos en esta práctica.\n\nnacimiento.csv: La matrícula de primer grado de del año 1957 a 2006, en Costa Rica.\nmatricula.csv: Las cifras de los nacimientos mensuales inscritos en Costa Rica de enero de 1990 a diciembre de 1995.\ncardiovascular.csv: Las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007\nventas.csv: Las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.\nexportacionesFOB.csv se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.\nllamadas_Bowerman.csv: Los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976.\ncrestcolgate.dat Series semanales de cuotas de mercado dentífrico de las marcas Colgate y Crest en los Estados Unidos de 1 de enero de 1958 al abril de 1963.\npetroleo.Rdata: Datos semanales del precio de la gasolina por barril desde 2000 a mediado de 2010.\nproduccion1.Rdata: Dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012.\ntemperatura.csv: Los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.\n\nDescarga de datos: link\n\n\n\n\nHernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "Prefacio"
+    ]
+  }
+]
