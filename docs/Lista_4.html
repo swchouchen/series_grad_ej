@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Shu Wei Chou Chen">
 
-<title>LISTA DE EJERCICIOS</title>
+<title>Lista de ejercicios 4 – LISTA DE EJERCICIOS</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -53,7 +87,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Lista_1.html" rel="next">
+<link href="./Lista_5.html" rel="next">
+<link href="./Lista_3.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -96,6 +131,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -270,7 +334,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Prefacio</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lista_4.html"><span class="chapter-title">Lista de ejercicios 4</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -301,7 +365,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prefacio</span></a>
   </div>
 </li>
@@ -322,7 +386,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Lista_4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lista de ejercicios 4</span></a>
+  <a href="./Lista_4.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Lista de ejercicios 4</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -361,12 +425,9 @@ div.csl-indent {
     <h2 id="toc-title">Índice general</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a>
-  <ul class="collapse">
-  <li><a href="#bases-de-datos" id="toc-bases-de-datos" class="nav-link" data-scroll-target="#bases-de-datos">Bases de datos</a></li>
-  </ul></li>
+  <li><a href="#un-estudio-de-simulaciones-del-proceso-ar1" id="toc-un-estudio-de-simulaciones-del-proceso-ar1" class="nav-link active" data-scroll-target="#un-estudio-de-simulaciones-del-proceso-ar1">Un estudio de simulaciones del proceso AR(1)</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/Lista_4.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -374,34 +435,14 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LISTA DE EJERCICIOS</h1>
-<p class="subtitle lead">Series Cronológicas I</p>
+<h1 class="title"><span class="chapter-title">Lista de ejercicios 4</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autor/a</div>
-  <div class="quarto-title-meta-heading">Afiliación</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Shu Wei Chou Chen <a href="mailto:shuwei.chou@ucr.ac.cr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Escuela de Estadística, Universidad de Costa Rica
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">agosto, 2026</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -411,25 +452,101 @@ div.csl-indent {
 </header>
 
 
-<section id="prefacio" class="level1 unnumbered">
-<h1 class="unnumbered">Prefacio</h1>
-<p>Este documento compila un conjunto de ejercicios seleccionados para apoyar el curso de Series Cronológicas I.</p>
-<section id="bases-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="bases-de-datos">Bases de datos</h2>
-<p>En esta sección, presentamos archivos de series temporales que usaremos en esta práctica.</p>
-<ol type="1">
-<li><code>nacimiento.csv</code>: La matrícula de primer grado de del año 1957 a 2006, en Costa Rica.</li>
-<li><code>matricula.csv</code>: Las cifras de los nacimientos mensuales inscritos en Costa Rica de enero de 1990 a diciembre de 1995.</li>
-<li><code>cardiovascular.csv</code>: Las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007</li>
-<li><code>ventas.csv</code>: Las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.</li>
-<li><code>exportacionesFOB.csv</code> se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.</li>
-<li><code>llamadas_Bowerman.csv</code>: Los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976.</li>
-<li><code>crestcolgate.dat</code> Series semanales de cuotas de mercado dentífrico de las marcas Colgate y Crest en los Estados Unidos de 1 de enero de 1958 al abril de 1963.</li>
-<li><code>petroleo.Rdata</code>: Datos semanales del precio de la gasolina por barril desde 2000 a mediado de 2010.</li>
-<li><code>produccion1.Rdata</code>: Dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012.</li>
-<li><code>temperatura.csv</code>: Los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.</li>
-</ol>
-<p>Descarga de datos: <a href="./datos.zip">link</a></p>
+<section id="un-estudio-de-simulaciones-del-proceso-ar1" class="level2">
+<h2 class="anchored" data-anchor-id="un-estudio-de-simulaciones-del-proceso-ar1">Un estudio de simulaciones del proceso AR(1)</h2>
+<p>El objetivo de esta práctica es entender los conceptos de estacionariedad de los modelos autorregresivos de orden <span class="math inline">\(1\)</span>, AR(1), mediante simulaciones, con el fin de complementar el aprendizaje de los conceptos teóricos vistos en la clase.</p>
+<p>Considere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal: <span class="math display">\[Y_t=C+\phi_1 Y_{t-1}+a_t\]</span> donde <span class="math inline">\(C\)</span> y <span class="math inline">\(\phi_1\)</span> son constantes desconocidas, y <span class="math inline">\(a_t \sim wn(0,\sigma_a^2)\)</span>. Además, recuerde que el proceso AR(1) es estacionario si <span class="math inline">\(|\phi_1|&lt;1\)</span>.</p>
+<div id="exr-IIII1" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.1</strong></span> Defina primero una semilla y una función para generar un proceso AR(1) con <span class="math inline">\(C=0\)</span> en donde <span class="math inline">\(a_t \sim N(0,\sigma_a^2)\)</span>, usando el siguiente código:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">100</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>gen_ar1 <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">N =</span> <span class="dv">150</span>, <span class="at">phi1 =</span> <span class="fl">0.8</span>, <span class="at">sigma2 =</span> <span class="dv">1</span>) {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(N,<span class="dv">0</span>,<span class="fu">sqrt</span>(sigma2)) </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="dv">0</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  y[<span class="dv">1</span>] <span class="ot">&lt;-</span> a[<span class="dv">1</span>]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span>N){</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    y[i] <span class="ot">&lt;-</span> phi1<span class="sc">*</span>y[i<span class="dv">-1</span>]<span class="sc">+</span>a[i]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Discuta y explique en sus palabras el significado de cada línea de códigos.</p>
+</div>
+<div id="exr-IIII2" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.2</strong></span> Genere <span class="math inline">\(10\)</span> veces un proceso AR(1) con errores como ruido blanco guassiano de longitud <span class="math inline">\(150\)</span> observaciones con <span class="math inline">\(\phi_1=0.8\)</span> y <span class="math inline">\(\sigma_a^2=1\)</span>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>realizaciones1 <span class="ot">&lt;-</span> <span class="fu">replicate</span>(<span class="at">n =</span> <span class="dv">10</span> ,<span class="fu">gen_ar1</span>(<span class="at">N=</span><span class="dv">150</span>,<span class="at">phi1=</span><span class="fl">0.8</span>,<span class="at">sigma2=</span><span class="dv">1</span>), <span class="at">simplify =</span> <span class="st">"array"</span> )</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="exr-IIII3" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.3</strong></span> Ahora en cada una de sus computadoras, grafique estas 10 realizaciones de un AR(1) usando:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(realizaciones1,<span class="at">col=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lista_4_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Comenten y discutan las características de estas realizaciones en el gráfico.</p>
+</div>
+<div id="exr-IIII4" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.4</strong></span> En vez de <span class="math inline">\(10\)</span> simulaciones, genere <span class="math inline">\(500\)</span> veces el proceso AR(1) con errores como ruido blanco guassiano de longitud <span class="math inline">\(150\)</span> observaciones con <span class="math inline">\(\phi_1=0.8\)</span> y <span class="math inline">\(\sigma_a^2=1\)</span>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>realizaciones2 <span class="ot">&lt;-</span> <span class="fu">replicate</span>(<span class="at">n =</span> <span class="dv">500</span> ,<span class="fu">gen_ar1</span>(<span class="at">N=</span><span class="dv">150</span>,<span class="at">phi1=</span><span class="fl">0.8</span>,<span class="at">sigma2=</span><span class="dv">1</span>), <span class="at">simplify =</span> <span class="st">"array"</span> )</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Calcule la media y la variancia de las <span class="math inline">\(500\)</span> realizaciones del proceso usando:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>promedios <span class="ot">&lt;-</span> <span class="fu">apply</span>(realizaciones2,<span class="at">MARGIN=</span><span class="dv">2</span>,mean)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>variancias <span class="ot">&lt;-</span> <span class="fu">apply</span>(realizaciones2,<span class="at">MARGIN=</span><span class="dv">2</span>,var)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Recuerde que la media del proceso es <span class="math inline">\(E(Z_t)=C \left( \frac{1}{1-\phi_1}\right)=\mu\)</span> y la variancia es <span class="math inline">\(Var(Y_t)=\left( \frac{1}{1-\phi_1^2} \right) \sigma_a^2\)</span>. Haga un análisis exploratorio con las 500 medias y variancias muestrales con medidas descriptivas e histogramas. Compárelos con la media y la variancia teórica del proceso y comente el resultado. ¿La estimación es buena?</p>
+</div>
+<div id="exr-IIII5" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.5</strong></span> Extrae las primeras dos realizaciones de los datos generados y calcule la función de autocorrelación muestral y función de autocorrelación parcial muestral.</p>
+<div class="columns">
+<div class="column">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>y1 <span class="ot">&lt;-</span> realizaciones2[,<span class="dv">1</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>astsa<span class="sc">::</span><span class="fu">acf2</span>(y1)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lista_4_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="288"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>y2 <span class="ot">&lt;-</span> realizaciones2[,<span class="dv">2</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>astsa<span class="sc">::</span><span class="fu">acf2</span>(y2)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Lista_4_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="288"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Comente los resultados y compárelos con la función de autocorrelación y autocorrelación parcial teóricas.</p>
+</div>
+<div id="exr-IIII6" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.6</strong></span> Repita el <a href="#exr-IIII1" class="quarto-xref">Ejercicio&nbsp;<span>4.1</span></a> al <a href="#exr-IIII5" class="quarto-xref">Ejercicio&nbsp;<span>4.5</span></a> pero con <span class="math inline">\(\phi_1=1\)</span>, es decir, el proceso generado no cumple la condición de estacionariedad. Compare los resultados con los ejercicios anteriores.</p>
+</div>
+<div id="exr-IIII7" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.7</strong></span> Utilice una serie generada en <a href="#exr-IIII6" class="quarto-xref">Ejercicio&nbsp;<span>4.6</span></a>, llámese <span class="math inline">\(Y_t\)</span>, y obtenga la serie diferenciada de la serie <span class="math inline">\(Y_t\)</span> definida como <span class="math display">\[Z_t = \Delta Y_t=Y_t-Y_{t-1}.\]</span> Analice el gráfico lineal de <span class="math inline">\(Z_t = \Delta Y_t\)</span>, así como la función de autocorrelación y la parcial muestrales.</p>
+</div>
+<div id="exr-IIII8" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.8</strong></span> Repita el <a href="#exr-IIII6" class="quarto-xref">Ejercicio&nbsp;<span>4.6</span></a> y el <a href="#exr-IIII7" class="quarto-xref">Ejercicio&nbsp;<span>4.7</span></a> pero con <span class="math inline">\(\phi_1=1.3\)</span>. Comente los resultados.</p>
+</div>
+<div id="exr-IIII9" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 4.9</strong></span> Note que la función <code>gen_ar1</code> genera la primera observación de la serie, <span class="math inline">\(Y_t\)</span> como <span class="math inline">\(Y_1 \sim N(0,\sigma^2)\)</span>. Esto implica que <span class="math inline">\(Y_1\)</span> no es autorregresivo de orden 1. Proponga una forma de corregir este problema y repita el <a href="#exr-IIII1" class="quarto-xref">Ejercicio&nbsp;<span>4.1</span></a> al <a href="#exr-IIII5" class="quarto-xref">Ejercicio&nbsp;<span>4.5</span></a>. ¿Qué diferencia nota?</p>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -446,7 +563,6 @@ Morettin, Pedro A., y Clélia M. C. Toloi. 2006. <em>Análise de Séries Tempora
 Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</em>. 4ta ed. Springer.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -865,10 +981,13 @@ Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./Lista_3.html" class="pagination-link" aria-label="Lista de ejercicios 3">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lista de ejercicios 3</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Lista_1.html" class="pagination-link" aria-label="Lista de ejercicios 1">
-        <span class="nav-page-text"><span class="chapter-title">Lista de ejercicios 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Lista_5.html" class="pagination-link" aria-label="Lista de ejercicios 5">
+        <span class="nav-page-text"><span class="chapter-title">Lista de ejercicios 5</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -877,4 +996,4 @@ Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/Lista_4.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div></div></footer></body></html>

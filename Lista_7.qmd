@@ -1,0 +1,16 @@
+# Lista de ejercicios 7
+
+::: {#exr-VII1 .Exercise}
+En la base de datos `llamadas_Bowerman.csv` se refiere a los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976. En marzo de 1974, la Cincinnati Bell Telephone Company introdujo una política para reducir la frecuencia de las llamadas de asistencia a la guía telefónica local, según la cual a cada suscriptor se le permitía efectuar tres de estas llamadas cada mes, pero se le cargaban 20 centavos de dólar por cada llamadas adicional. Antes de marzo de 1974 no existía ese cargo.
+
+a.  Realice análisis exploratorio de la serie y comente sus características.
+b.  Construya y estime un modelo de intervención apropiado para la serie.
+c.  Comente sobre el efecto de la política introducida por la Bell Telephone Company en marzo de 1974.
+:::
+
+::: {#exr-VII2 .Exercise}
+En las primeras dos columnas de la base de datos `crestcolgate.dat` se refiere a los datos de Crest y Colgate que fue utilizado en la clase.
+
+a.  Realice análisis exploratorio de la serie Colgate y comente sus características
+b.  Desarrolle un modelo de intervención para la serie Colgate.
+:::

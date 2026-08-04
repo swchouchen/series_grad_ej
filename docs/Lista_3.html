@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Shu Wei Chou Chen">
 
-<title>LISTA DE EJERCICIOS</title>
+<title>Lista de ejercicios 3 – LISTA DE EJERCICIOS</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -53,7 +52,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Lista_1.html" rel="next">
+<link href="./Lista_4.html" rel="next">
+<link href="./Lista_2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -96,6 +96,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -270,7 +299,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Prefacio</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lista_3.html"><span class="chapter-title">Lista de ejercicios 3</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -301,7 +330,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prefacio</span></a>
   </div>
 </li>
@@ -317,7 +346,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Lista_3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lista de ejercicios 3</span></a>
+  <a href="./Lista_3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Lista de ejercicios 3</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -361,12 +390,9 @@ div.csl-indent {
     <h2 id="toc-title">Índice general</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a>
-  <ul class="collapse">
-  <li><a href="#bases-de-datos" id="toc-bases-de-datos" class="nav-link" data-scroll-target="#bases-de-datos">Bases de datos</a></li>
-  </ul></li>
+  <li><a href="#soluciones-de-ejercicios-seleccionados" id="toc-soluciones-de-ejercicios-seleccionados" class="nav-link active" data-scroll-target="#soluciones-de-ejercicios-seleccionados">Soluciones de ejercicios seleccionados</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/Lista_3.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -374,34 +400,14 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LISTA DE EJERCICIOS</h1>
-<p class="subtitle lead">Series Cronológicas I</p>
+<h1 class="title"><span class="chapter-title">Lista de ejercicios 3</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autor/a</div>
-  <div class="quarto-title-meta-heading">Afiliación</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Shu Wei Chou Chen <a href="mailto:shuwei.chou@ucr.ac.cr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Escuela de Estadística, Universidad de Costa Rica
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">agosto, 2026</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -411,25 +417,103 @@ div.csl-indent {
 </header>
 
 
-<section id="prefacio" class="level1 unnumbered">
-<h1 class="unnumbered">Prefacio</h1>
-<p>Este documento compila un conjunto de ejercicios seleccionados para apoyar el curso de Series Cronológicas I.</p>
-<section id="bases-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="bases-de-datos">Bases de datos</h2>
-<p>En esta sección, presentamos archivos de series temporales que usaremos en esta práctica.</p>
-<ol type="1">
-<li><code>nacimiento.csv</code>: La matrícula de primer grado de del año 1957 a 2006, en Costa Rica.</li>
-<li><code>matricula.csv</code>: Las cifras de los nacimientos mensuales inscritos en Costa Rica de enero de 1990 a diciembre de 1995.</li>
-<li><code>cardiovascular.csv</code>: Las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007</li>
-<li><code>ventas.csv</code>: Las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.</li>
-<li><code>exportacionesFOB.csv</code> se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.</li>
-<li><code>llamadas_Bowerman.csv</code>: Los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976.</li>
-<li><code>crestcolgate.dat</code> Series semanales de cuotas de mercado dentífrico de las marcas Colgate y Crest en los Estados Unidos de 1 de enero de 1958 al abril de 1963.</li>
-<li><code>petroleo.Rdata</code>: Datos semanales del precio de la gasolina por barril desde 2000 a mediado de 2010.</li>
-<li><code>produccion1.Rdata</code>: Dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012.</li>
-<li><code>temperatura.csv</code>: Los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.</li>
+<div id="exr-III1" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.1</strong></span> En la base de datos <code>cardiovascular.csv</code> se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.</p>
+<ol type="a">
+<li>Obtenga el gráfico lineal de la serie y estime función de autocorrelación.</li>
+<li>Comente el comportamiento de la serie.</li>
 </ol>
-<p>Descarga de datos: <a href="./datos.zip">link</a></p>
+</div>
+<div id="exr-III2" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.2</strong></span> En la base de datos <code>ventas.csv</code> se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.</p>
+<ol type="a">
+<li>Obtenga el gráfico lineal de la serie y estime función de autocorrelación.</li>
+<li>Comente el comportamiento de la serie.</li>
+</ol>
+</div>
+<div id="exr-III3" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.3</strong></span> Utilice la serie <code>fpp2::goog</code> de la bolsa de valores del Google de 25 de febrero, 2013 a 13 de febrero, 2017.</p>
+<ol type="a">
+<li>Haga un gráfico lineal de la serie y y estime función de autocorrelación.</li>
+<li>Comente las características de esta serie.</li>
+<li>Defina <span class="math inline">\(Z_t\)</span> como la serie diferenciada de la serie <span class="math inline">\(Y_t\)</span>, es decir, <span class="math display">\[
+Z_t=Y_t-Y_{t-1}.
+\]</span> <span class="math inline">\(Z_t\)</span> mide el cambio que produce la observación en el tiempo <span class="math inline">\(t\)</span> con respecto a la observación en el tiempo <span class="math inline">\(t-1\)</span>. Utilice la función <code>diff(goog)</code> para obtener los cambios diarios de la serie.</li>
+<li>Haga un gráfico lineal de la serie <span class="math inline">\(Z_t\)</span> y estime su función de autocorrelación. Comente los resultados y compare con los resultados de (a) y (b).</li>
+</ol>
+</div>
+<div id="exr-III4" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.4</strong></span> Considere el proceso estocástico independiente <span class="math inline">\(Z_t=a_t\)</span> con <span class="math inline">\(t=\pm 1,\pm2,...\)</span> y</p>
+<p><span class="math display">\[
+a_t=\left\lbrace
+\begin{aligned}
+1, &amp; &amp; \text{con probabilidad}~~ 1/2 \\
+-1, &amp; &amp;  \text{con probabilidad}~~ 1/2,
+\end{aligned}
+\right.
+\]</span></p>
+<ol type="a">
+<li>Calcule la media del proceso <span class="math inline">\(Z_t\)</span>.</li>
+<li>Calcule <span class="math inline">\(\gamma(t,s)=Cov(a_t,a_s)\)</span> y haga su gráfico.</li>
+<li>Calcule <span class="math inline">\(\rho(t,s)=\frac{\gamma(t,s)}{\sqrt{\gamma(t,t)\gamma(s,s)}}\)</span> y haga el gráfico.</li>
+<li>¿<span class="math inline">\(Z_t\)</span> es débilmente estacionario?</li>
+</ol>
+</div>
+<div id="exr-III5" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.5</strong></span> Suponga que <span class="math inline">\(\left\lbrace a_t, t=1,2,... \right\rbrace\)</span> es una secuencia de variables aleatorias independientes e identicamente distribuídas, con <span class="math display">\[
+    P(a_t=0)=P(a_t=1)=\frac{1}{2}
+    \]</span></p>
+<ol type="a">
+<li>¿El proceso <span class="math inline">\(a_1+a_2 cos(t)\)</span> es estacionario?</li>
+<li>¿El proceso <span class="math inline">\(a_1+a_2 \cos(t)+a_3 \cos(t)+\sin(t)\)</span> es estacionario?</li>
+</ol>
+</div>
+<div id="exr-III6" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.6</strong></span> Si <span class="math inline">\(\left\lbrace X_t, t \in T \right\rbrace\)</span> y <span class="math inline">\(\left\lbrace Y_t, t \in T \right\rbrace\)</span> son estacionarios y además independientes, defina <span class="math inline">\(Z_t=aX_t+bY_t\)</span> para todo <span class="math inline">\(t\)</span>. ¿<span class="math inline">\(\left\lbrace Z_t, t \in T \right\rbrace\)</span> será estacionario?</p>
+</div>
+<div id="exr-III7" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.7</strong></span> Considere una secuencia aleatorias <span class="math inline">\(\left\lbrace \epsilon_t, t \geq 1 \right\rbrace\)</span>, tal que <span class="math inline">\(\epsilon_t\)</span> es independiente e idénticamente distribuida con media <span class="math inline">\(\mu_\epsilon\)</span> y variancia <span class="math inline">\(\sigma^2_\epsilon\)</span>. Defina el paseo aleatorio <span class="math inline">\(X_t\)</span> como <span class="math display">\[X_t=\epsilon_1+...+\epsilon_t.\]</span></p>
+<ol type="a">
+<li>Muestre que <span class="math inline">\(E(X_t)=t\mu_\epsilon\)</span> y <span class="math inline">\(Var(X_t)=t \sigma_\epsilon^2\)</span>.</li>
+<li>Muestre que <span class="math inline">\(\gamma_X(t,s)=\sigma_\epsilon^2 \operatorname{min}(t,s)\)</span>.</li>
+<li>¿Es <span class="math inline">\(X_t\)</span> estacionario?</li>
+<li>Simule los datos de <span class="math inline">\(\epsilon_t\)</span> y <span class="math inline">\(X_t\)</span> de tamaño <span class="math inline">\(T=100\)</span>. Realice gráficos lineales para las dos series simuladas y comente los resultados.</li>
+</ol>
+</div>
+<div id="exr-III8a" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.8</strong></span> Sea <span class="math inline">\(Z(t)=A \cos (\lambda t)+B \sin (\lambda t)\)</span>, donde <span class="math inline">\(t=0,\pm 1, ...\)</span> y <span class="math inline">\(\lambda\)</span> es constantes positivas, y <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> son variables aleatorias independientes e independientes entre sí con medias <span class="math inline">\(0\)</span> y variancias <span class="math inline">\(\sigma^2=Var(A)=Var(B)\)</span>. ¿El proceso <span class="math inline">\(Z(t)\)</span> es estacionario? Encuentre la media <span class="math inline">\(E(Z(t))\)</span> y la función de autocovariancia <span class="math inline">\(\gamma(t,t+h)\)</span> de <span class="math inline">\(Z(t)\)</span>.</p>
+</div>
+<div id="exr-III8" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.9</strong></span> Sea <span class="math inline">\(Z(t)=\sum\limits_{j=1}^n \left[A_j \cos (\lambda_j t)+B_j \sin (\lambda_j t)\right]\)</span>, donde <span class="math inline">\(t=0,\pm 1, ...\)</span> y <span class="math inline">\(\lambda_1,...,\lambda_n\)</span> son constantes positivas, y <span class="math inline">\(A_j\)</span>, <span class="math inline">\(B_j\)</span> son variables aleatorias independientes e independientes entre sí con medias <span class="math inline">\(0\)</span> y variancias <span class="math inline">\(\sigma_j^2=Var(A_j)=Var(B_j),j=1,...,n\)</span>. El proceso <span class="math inline">\(Z(t)\)</span> es estacionario? Encuentre la media <span class="math inline">\(E(Z(t))\)</span> y la función de autocovariancia <span class="math inline">\(\gamma(t,t+h)\)</span> de <span class="math inline">\(Z(t)\)</span>.</p>
+</div>
+<div id="exr-III9" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.10</strong></span> Utilice la serie <code>fpp2::goog</code> de la bolsa de valores del Google de 25 de febrero, 2013 a 13 de febrero, 2017.</p>
+<ol type="a">
+<li>Haga un gráfico lineal de la serie y comente las características de esta serie.</li>
+<li>Una serie diferenciada <span class="math inline">\(Z_t\)</span> de la serie <span class="math inline">\(Y_t\)</span> es definida como <span class="math display">\[
+Z_t=Y_t-Y_{t-1}.
+\]</span> <span class="math inline">\(Z_t\)</span> mide el cambio que produce la observación en el tiempo <span class="math inline">\(t\)</span> con respecto a la observación en el tiempo <span class="math inline">\(t-1\)</span>. Utilice la función <code>diff(goog)</code> para obtener los cambios diarios de la serie.</li>
+<li>Haga un gráfico lineal de la serie obtenida en b. ¿La serie parece a un ruido blanco?</li>
+<li>Utilice la función <code>ggAcf()</code> para calcular la función de autocorrelación y compárela con la función de autocorrelación de los ruidos blancos.</li>
+</ol>
+</div>
+<div id="exr-III10" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.11</strong></span> Compare el modelo de caminata aleatoria con el ejercicio 7. Recuerde que una caminata aleatoria se define como:</p>
+<p><span class="math display">\[X_t= X_{t-1}+ \epsilon_t,\]</span> donde <span class="math inline">\(\epsilon_t \sim N(0,\sigma^2)\)</span>.</p>
+<ol type="a">
+<li>Simule una secuencia de variables aleatorias normales con media <span class="math inline">\(0\)</span> y variancia <span class="math inline">\(1\)</span>.</li>
+<li>Utilice la función <code>cumsum()</code> para generar la suma acumulada de la secuencia en a.</li>
+<li>Haga un gráfico lineal de la serie generada en (b) y estime la función de autocorrelación.</li>
+<li>Realice varias veces el ejercicio y observe el comportamiento de la serie generada.</li>
+<li>Comente las características de este proceso y compare con los resultados empíricos de este ejercicio con los resultados teóricos del ejercicio 7.</li>
+</ol>
+</div>
+<section id="soluciones-de-ejercicios-seleccionados" class="level2">
+<h2 class="anchored" data-anchor-id="soluciones-de-ejercicios-seleccionados">Soluciones de ejercicios seleccionados</h2>
+<p><a href="#exr-III4" class="quarto-xref">Ejercicio&nbsp;<span>3.4</span></a> (a) <span class="math inline">\(E(Z_t)=0, \forall t \in \mathbb{Z}\)</span>. (c) <span class="math inline">\(\rho(t,s)=1, ~\text{si}~t=s\)</span> y <span class="math inline">\(\rho(t,s)=0, ~\text{si}~t \neq s\)</span>.</p>
+<p><a href="#exr-III6" class="quarto-xref">Ejercicio&nbsp;<span>3.6</span></a> Es estacionario.</p>
+<p><a href="#exr-III7" class="quarto-xref">Ejercicio&nbsp;<span>3.7</span></a> Es estacionario.</p>
+<p><a href="#exr-III8" class="quarto-xref">Ejercicio&nbsp;<span>3.9</span></a> Es estacionario.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -446,7 +530,6 @@ Morettin, Pedro A., y Clélia M. C. Toloi. 2006. <em>Análise de Séries Tempora
 Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</em>. 4ta ed. Springer.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -865,10 +948,13 @@ Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./Lista_2.html" class="pagination-link" aria-label="Lista de ejercicios 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lista de ejercicios 2</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Lista_1.html" class="pagination-link" aria-label="Lista de ejercicios 1">
-        <span class="nav-page-text"><span class="chapter-title">Lista de ejercicios 1</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Lista_4.html" class="pagination-link" aria-label="Lista de ejercicios 4">
+        <span class="nav-page-text"><span class="chapter-title">Lista de ejercicios 4</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -877,4 +963,4 @@ Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/swchouchen/series_grad_ej/edit/main/Lista_3.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></div></div></footer></body></html>

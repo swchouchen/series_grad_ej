@@ -1,0 +1,38 @@
+# Lista de ejercicios 8
+
+::: {#exr-VIII1 .Exercise}
+En la base de datos `petroleo.Rdata` se refiere a los datos semanales del precio de la gasolina por barril desde 2000 a mediado de 2010.
+
+a.  Realice un análisis exploratorio de la serie de precio $X_t$.
+b.  Calcule los retornos de la serie, es decir, $\nabla \ln X_t$
+c.  Ajuste un modelo ARIMA más apropiado para los retornos de la serie. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.
+d.  Escriba el modelo ajustado en (c).
+e.  Ajuste un modelo GARCH a la serie de retornos. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.
+f.  Ajuste un modelo ARMA-GARCH a la serie de retornos. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.
+g.  ¿Cuál es el modelo más apropiado? Explique.
+h.  Escriba el modelo seleccionado en (g).
+:::
+
+::: {#exr-VIII2 .Exercise}
+Considere la base de datos `produccion1.Rdata`. La base contiene dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012:
+
+-   bcd: bienes de consumo duradero
+-   bcnd: bienes de consumo no duradero
+
+a.  Calcule los retornos $r=(r_1,r_2)$ de las dos series (la primera diferencia de la transformación logarítmica). Analice descriptivamente las dos series $r1$ y $r2$.
+b.  Estime e interprete la función de autocorrelación y autocorrelación parcial de la serie $r1$.
+c.  Estime e interprete la función de autocorrelación y autocorrelación parcial de la serie $r2$.
+d.  Estime e interprete la función de autocorrelación cruzada entre $r1$ y $r2$.
+e.  Basado en el BIC, ajuste el mejor modelo VAR para $r$. Explique detalladamente el procedimiento y comente sobre los supuestos de este modelo.
+f.  Escriba el modelo ajustado en forma matricial.
+g.  Produzca pronósticos 10 periodos para frente.
+:::
+
+::: {#exr-VIII3 .Exercise}
+En la base de datos `temperatura.csv` se refiere a los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.
+
+a.  Realice un análisis exploratorio de la serie de temperatura.
+b.  Separe los últimos 12 datos (enero de 1985 a diciembre de 1985) como datos de prueba y ajuste un modelo SARIMA más apropiado para la serie de temperatura de enero de 1976 a diciembre de 1984. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.
+c.  Escriba el modelo ajustado en (b).
+d.  Produzca pronósticos de 12 periodos para frente con el modelo ajustado y calcule el error cuadático medio (MSE).
+:::

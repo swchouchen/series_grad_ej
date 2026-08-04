@@ -1,0 +1,36 @@
+# Lista de ejercicios 5
+
+::: {#exr-V1 .Exercise}
+Escriba los siguientes modelos usando el operador de rezago $B$ y escriba los operadores autorregresivos y de medias móviles.
+
+a.  $\tilde{Z}_t-0.6\tilde{Z}_{t-1}=a_t$
+b.  $\tilde{Z}_t=a_t+0.8 a_{t-1}$
+c.  $\tilde{Z}_t=0.3 \tilde{Z}_{t-1} -0.6  \tilde{Z}_{t-2}+a_t$
+d.  $\tilde{Z}_{t}-0.4 \tilde{Z}_{t-1}=a_t -0.3 a_{t-1} + 0.8 a_{t-2}$
+e.  $Z_t = 0.5 Z_{t-1}-0.75 Z_{t-2}+a_t+4$
+f.  $\tilde{Z}_{t}= 0.3 a_{t-1} + 0.6 a_{t-2}+a_t$
+:::
+
+::: {#exr-V2 .Exercise}
+Para cada uno de los modelos del @exr-V1, verifique la condición de estacionariedad y invertibilidad.
+:::
+
+::: {#exr-V3 .Exercise}
+En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.
+
+a.  Ajuste un modelo de ARIMA apropiado.
+b.  Escriba el modelo final ajustado.
+c.  Produzca pronósticos para enero, febrero y marzo de 2008.
+:::
+
+::: {#exr-V4 .Exercise}
+En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005. Ajuste un modelo de ARIMA apropiado y produzca pronósticos para enero, febrero y marzo de 2006.
+
+a.  Ajuste un modelo de ARIMA apropiado.
+b.  Escriba el modelo final ajustado.
+c.  Produzca pronósticos para enero, febrero y marzo de 2006.
+:::
+
+## Soluciones de ejercicios seleccionados
+
+@exr-V2 (c) estacionario e invertible. (f) estacionario e invertible.

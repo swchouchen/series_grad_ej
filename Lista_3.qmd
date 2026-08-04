@@ -1,0 +1,107 @@
+# Lista de ejercicios 3
+
+::: {#exr-III1 .Exercise}
+En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.
+
+a.  Obtenga el gráfico lineal de la serie y estime función de autocorrelación.
+b.  Comente el comportamiento de la serie.
+:::
+
+::: {#exr-III2 .Exercise}
+En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.
+
+a.  Obtenga el gráfico lineal de la serie y estime función de autocorrelación.
+b.  Comente el comportamiento de la serie.
+:::
+
+::: {#exr-III3 .Exercise}
+Utilice la serie `fpp2::goog` de la bolsa de valores del Google de 25 de febrero, 2013 a 13 de febrero, 2017.
+
+a.  Haga un gráfico lineal de la serie y y estime función de autocorrelación.
+b.  Comente las características de esta serie.
+c.  Defina $Z_t$ como la serie diferenciada de la serie $Y_t$, es decir, $$
+    Z_t=Y_t-Y_{t-1}.
+    $$ $Z_t$ mide el cambio que produce la observación en el tiempo $t$ con respecto a la observación en el tiempo $t-1$. Utilice la función `diff(goog)` para obtener los cambios diarios de la serie.
+d.  Haga un gráfico lineal de la serie $Z_t$ y estime su función de autocorrelación. Comente los resultados y compare con los resultados de (a) y (b).
+:::
+
+::: {#exr-III4 .Exercise}
+Considere el proceso estocástico independiente $Z_t=a_t$ con $t=\pm 1,\pm2,...$ y
+
+$$
+a_t=\left\lbrace 
+\begin{aligned}
+1, & & \text{con probabilidad}~~ 1/2 \\
+-1, & &  \text{con probabilidad}~~ 1/2,
+\end{aligned}
+\right. 
+$$
+
+a.  Calcule la media del proceso $Z_t$.
+b.  Calcule $\gamma(t,s)=Cov(a_t,a_s)$ y haga su gráfico.
+c.  Calcule $\rho(t,s)=\frac{\gamma(t,s)}{\sqrt{\gamma(t,t)\gamma(s,s)}}$ y haga el gráfico.
+d.  ¿$Z_t$ es débilmente estacionario?
+:::
+
+::: {#exr-III5 .Exercise}
+Suponga que $\left\lbrace a_t, t=1,2,... \right\rbrace$ es una secuencia de variables aleatorias independientes e identicamente distribuídas, con $$
+    P(a_t=0)=P(a_t=1)=\frac{1}{2}
+    $$
+
+a.  ¿El proceso $a_1+a_2 cos(t)$ es estacionario?
+b.  ¿El proceso $a_1+a_2 \cos(t)+a_3 \cos(t)+\sin(t)$ es estacionario?
+:::
+
+::: {#exr-III6 .Exercise}
+Si $\left\lbrace X_t, t \in T \right\rbrace$ y $\left\lbrace Y_t, t \in T \right\rbrace$ son estacionarios y además independientes, defina $Z_t=aX_t+bY_t$ para todo $t$. ¿$\left\lbrace Z_t, t \in T \right\rbrace$ será estacionario?
+:::
+
+::: {#exr-III7 .Exercise}
+Considere una secuencia aleatorias $\left\lbrace \epsilon_t, t \geq 1 \right\rbrace$, tal que $\epsilon_t$ es independiente e idénticamente distribuida con media $\mu_\epsilon$ y variancia $\sigma^2_\epsilon$. Defina el paseo aleatorio $X_t$ como $$X_t=\epsilon_1+...+\epsilon_t.$$
+
+a.  Muestre que $E(X_t)=t\mu_\epsilon$ y $Var(X_t)=t \sigma_\epsilon^2$.
+b.  Muestre que $\gamma_X(t,s)=\sigma_\epsilon^2 \operatorname{min}(t,s)$.
+c.  ¿Es $X_t$ estacionario?
+d.  Simule los datos de $\epsilon_t$ y $X_t$ de tamaño $T=100$. Realice gráficos lineales para las dos series simuladas y comente los resultados.
+:::
+
+::: {#exr-III8a .Exercise}
+Sea $Z(t)=A \cos (\lambda t)+B \sin (\lambda t)$, donde $t=0,\pm 1, ...$ y $\lambda$ es constantes positivas, y $A$, $B$ son variables aleatorias independientes e independientes entre sí con medias $0$ y variancias $\sigma^2=Var(A)=Var(B)$. ¿El proceso $Z(t)$ es estacionario? Encuentre la media $E(Z(t))$ y la función de autocovariancia $\gamma(t,t+h)$ de $Z(t)$.
+:::
+
+::: {#exr-III8 .Exercise}
+Sea $Z(t)=\sum\limits_{j=1}^n \left[A_j \cos (\lambda_j t)+B_j \sin (\lambda_j t)\right]$, donde $t=0,\pm 1, ...$ y $\lambda_1,...,\lambda_n$ son constantes positivas, y $A_j$, $B_j$ son variables aleatorias independientes e independientes entre sí con medias $0$ y variancias $\sigma_j^2=Var(A_j)=Var(B_j),j=1,...,n$. El proceso $Z(t)$ es estacionario? Encuentre la media $E(Z(t))$ y la función de autocovariancia $\gamma(t,t+h)$ de $Z(t)$.
+:::
+
+::: {#exr-III9 .Exercise}
+Utilice la serie `fpp2::goog` de la bolsa de valores del Google de 25 de febrero, 2013 a 13 de febrero, 2017.
+
+a.  Haga un gráfico lineal de la serie y comente las características de esta serie.
+b.  Una serie diferenciada $Z_t$ de la serie $Y_t$ es definida como $$
+    Z_t=Y_t-Y_{t-1}.
+    $$ $Z_t$ mide el cambio que produce la observación en el tiempo $t$ con respecto a la observación en el tiempo $t-1$. Utilice la función `diff(goog)` para obtener los cambios diarios de la serie.
+c.  Haga un gráfico lineal de la serie obtenida en b. ¿La serie parece a un ruido blanco?
+d.  Utilice la función `ggAcf()` para calcular la función de autocorrelación y compárela con la función de autocorrelación de los ruidos blancos.
+:::
+
+::: {#exr-III10 .Exercise}
+Compare el modelo de caminata aleatoria con el ejercicio 7. Recuerde que una caminata aleatoria se define como:
+
+$$X_t= X_{t-1}+ \epsilon_t,$$ donde $\epsilon_t \sim N(0,\sigma^2)$.
+
+a.  Simule una secuencia de variables aleatorias normales con media $0$ y variancia $1$.
+b.  Utilice la función `cumsum()` para generar la suma acumulada de la secuencia en a.
+c.  Haga un gráfico lineal de la serie generada en (b) y estime la función de autocorrelación.
+d.  Realice varias veces el ejercicio y observe el comportamiento de la serie generada.
+e.  Comente las características de este proceso y compare con los resultados empíricos de este ejercicio con los resultados teóricos del ejercicio 7.
+:::
+
+## Soluciones de ejercicios seleccionados
+
+@exr-III4 (a) $E(Z_t)=0, \forall t \in \mathbb{Z}$. (c) $\rho(t,s)=1, ~\text{si}~t=s$ y $\rho(t,s)=0, ~\text{si}~t \neq s$.
+
+@exr-III6 Es estacionario.
+
+@exr-III7 Es estacionario.
+
+@exr-III8 Es estacionario.

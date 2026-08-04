@@ -1,0 +1,15 @@
+# Lista de ejercicios 2
+
+::: {#exr-II1 .Exercise}
+En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.
+
+a.  Ajuste un modelo de regresión apropiado y produzca pronósticos para los 12 meses de 2008.
+b.  Analice los supuestos del modelo ajustado.
+:::
+
+::: {#exr-II2 .Exercise}
+En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.
+
+a.  Ajuste un modelo de regresión apropiado y produzca pronósticos para los 12 meses de 2006.
+b.  Analice los supuestos del modelo ajustado.
+:::

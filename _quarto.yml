@@ -14,13 +14,13 @@ book:
   chapters:
     - index.qmd
     - Lista_1.qmd
-    # - Lista_2.qmd
-    # - Lista_3.qmd
-    # - Lista_4.qmd    
-    # - Lista_5.qmd
-    # - Lista_6.qmd    
-    # - Lista_7.qmd    
-    # - Lista_8.qmd    
+    - Lista_2.qmd
+    - Lista_3.qmd
+    - Lista_4.qmd
+    - Lista_5.qmd
+    - Lista_6.qmd
+    - Lista_7.qmd
+    - Lista_8.qmd
     - references.qmd
   # appendices:
   #   - appendixA.qmd

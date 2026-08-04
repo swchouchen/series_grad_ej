@@ -48,5 +48,105 @@
     "crumbs": [
       "Prefacio"
     ]
+  },
+  {
+    "objectID": "Lista_2.html",
+    "href": "Lista_2.html",
+    "title": "Lista de ejercicios 2",
+    "section": "",
+    "text": "Ejercicio 2.1 En la base de datos cardiovascular.csv se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.\n\nAjuste un modelo de regresión apropiado y produzca pronósticos para los 12 meses de 2008.\nAnalice los supuestos del modelo ajustado.\n\n\n\nEjercicio 2.2 En la base de datos ventas.csv se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.\n\nAjuste un modelo de regresión apropiado y produzca pronósticos para los 12 meses de 2006.\nAnalice los supuestos del modelo ajustado.\n\n\n\n\n\n\nHernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lista de ejercicios 2</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_3.html",
+    "href": "Lista_3.html",
+    "title": "Lista de ejercicios 3",
+    "section": "",
+    "text": "Soluciones de ejercicios seleccionados\nEjercicio 3.4 (a) \\(E(Z_t)=0, \\forall t \\in \\mathbb{Z}\\). (c) \\(\\rho(t,s)=1, ~\\text{si}~t=s\\) y \\(\\rho(t,s)=0, ~\\text{si}~t \\neq s\\).\nEjercicio 3.6 Es estacionario.\nEjercicio 3.7 Es estacionario.\nEjercicio 3.9 Es estacionario.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lista de ejercicios 3</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_3.html#soluciones-de-ejercicios-seleccionados",
+    "href": "Lista_3.html#soluciones-de-ejercicios-seleccionados",
+    "title": "Lista de ejercicios 3",
+    "section": "",
+    "text": "Hernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lista de ejercicios 3</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_4.html",
+    "href": "Lista_4.html",
+    "title": "Lista de ejercicios 4",
+    "section": "",
+    "text": "Un estudio de simulaciones del proceso AR(1)\nEl objetivo de esta práctica es entender los conceptos de estacionariedad de los modelos autorregresivos de orden \\(1\\), AR(1), mediante simulaciones, con el fin de complementar el aprendizaje de los conceptos teóricos vistos en la clase.\nConsidere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal: \\[Y_t=C+\\phi_1 Y_{t-1}+a_t\\] donde \\(C\\) y \\(\\phi_1\\) son constantes desconocidas, y \\(a_t \\sim wn(0,\\sigma_a^2)\\). Además, recuerde que el proceso AR(1) es estacionario si \\(|\\phi_1|&lt;1\\).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lista de ejercicios 4</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_4.html#un-estudio-de-simulaciones-del-proceso-ar1",
+    "href": "Lista_4.html#un-estudio-de-simulaciones-del-proceso-ar1",
+    "title": "Lista de ejercicios 4",
+    "section": "",
+    "text": "Ejercicio 4.1 Defina primero una semilla y una función para generar un proceso AR(1) con \\(C=0\\) en donde \\(a_t \\sim N(0,\\sigma_a^2)\\), usando el siguiente código:\n\nset.seed(100)\ngen_ar1 &lt;- function(N = 150, phi1 = 0.8, sigma2 = 1) {\n  a &lt;- rnorm(N,0,sqrt(sigma2)) \n  y &lt;- as.numeric(0)\n  y[1] &lt;- a[1]\n  for(i in 2:N){\n    y[i] &lt;- phi1*y[i-1]+a[i]\n  }\n  return(y)\n}\n\nDiscuta y explique en sus palabras el significado de cada línea de códigos.\n\n\nEjercicio 4.2 Genere \\(10\\) veces un proceso AR(1) con errores como ruido blanco guassiano de longitud \\(150\\) observaciones con \\(\\phi_1=0.8\\) y \\(\\sigma_a^2=1\\).\n\nrealizaciones1 &lt;- replicate(n = 10 ,gen_ar1(N=150,phi1=0.8,sigma2=1), simplify = \"array\" )\n\n\n\nEjercicio 4.3 Ahora en cada una de sus computadoras, grafique estas 10 realizaciones de un AR(1) usando:\n\nts.plot(realizaciones1,col=1:10)\n\n\n\n\n\n\n\n\nComenten y discutan las características de estas realizaciones en el gráfico.\n\n\nEjercicio 4.4 En vez de \\(10\\) simulaciones, genere \\(500\\) veces el proceso AR(1) con errores como ruido blanco guassiano de longitud \\(150\\) observaciones con \\(\\phi_1=0.8\\) y \\(\\sigma_a^2=1\\).\n\nrealizaciones2 &lt;- replicate(n = 500 ,gen_ar1(N=150,phi1=0.8,sigma2=1), simplify = \"array\" )\n\nCalcule la media y la variancia de las \\(500\\) realizaciones del proceso usando:\n\npromedios &lt;- apply(realizaciones2,MARGIN=2,mean)\nvariancias &lt;- apply(realizaciones2,MARGIN=2,var)\n\nRecuerde que la media del proceso es \\(E(Z_t)=C \\left( \\frac{1}{1-\\phi_1}\\right)=\\mu\\) y la variancia es \\(Var(Y_t)=\\left( \\frac{1}{1-\\phi_1^2} \\right) \\sigma_a^2\\). Haga un análisis exploratorio con las 500 medias y variancias muestrales con medidas descriptivas e histogramas. Compárelos con la media y la variancia teórica del proceso y comente el resultado. ¿La estimación es buena?\n\n\nEjercicio 4.5 Extrae las primeras dos realizaciones de los datos generados y calcule la función de autocorrelación muestral y función de autocorrelación parcial muestral.\n\n\n\ny1 &lt;- realizaciones2[,1]\nastsa::acf2(y1)\n\n\n\n\n\n\n\n\n\n\ny2 &lt;- realizaciones2[,2]\nastsa::acf2(y2)\n\n\n\n\n\n\n\n\n\n\nComente los resultados y compárelos con la función de autocorrelación y autocorrelación parcial teóricas.\n\n\nEjercicio 4.6 Repita el Ejercicio 4.1 al Ejercicio 4.5 pero con \\(\\phi_1=1\\), es decir, el proceso generado no cumple la condición de estacionariedad. Compare los resultados con los ejercicios anteriores.\n\n\nEjercicio 4.7 Utilice una serie generada en Ejercicio 4.6, llámese \\(Y_t\\), y obtenga la serie diferenciada de la serie \\(Y_t\\) definida como \\[Z_t = \\Delta Y_t=Y_t-Y_{t-1}.\\] Analice el gráfico lineal de \\(Z_t = \\Delta Y_t\\), así como la función de autocorrelación y la parcial muestrales.\n\n\nEjercicio 4.8 Repita el Ejercicio 4.6 y el Ejercicio 4.7 pero con \\(\\phi_1=1.3\\). Comente los resultados.\n\n\nEjercicio 4.9 Note que la función gen_ar1 genera la primera observación de la serie, \\(Y_t\\) como \\(Y_1 \\sim N(0,\\sigma^2)\\). Esto implica que \\(Y_1\\) no es autorregresivo de orden 1. Proponga una forma de corregir este problema y repita el Ejercicio 4.1 al Ejercicio 4.5. ¿Qué diferencia nota?\n\n\n\n\n\nHernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lista de ejercicios 4</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_5.html",
+    "href": "Lista_5.html",
+    "title": "Lista de ejercicios 5",
+    "section": "",
+    "text": "Soluciones de ejercicios seleccionados\nEjercicio 5.2 (c) estacionario e invertible. (f) estacionario e invertible.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Lista de ejercicios 5</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_5.html#soluciones-de-ejercicios-seleccionados",
+    "href": "Lista_5.html#soluciones-de-ejercicios-seleccionados",
+    "title": "Lista de ejercicios 5",
+    "section": "",
+    "text": "Hernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Lista de ejercicios 5</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_6.html",
+    "href": "Lista_6.html",
+    "title": "Lista de ejercicios 6",
+    "section": "",
+    "text": "Ejercicio 6.1 Considere el modelo \\(SARIMA(0,1,2)(0,1,1)_{12}\\): \\[\\nabla \\nabla_{12} Z_t=(1-\\Theta_{12} B^{12})(1-\\theta_1 B-\\theta_2 B^2)a_t\\]\n\nEscriba el modelo en la forma de un modelo ARMA.\n¿Cuál es el orden del modelo ARMA resultante?\nDetermine el polinomio autoregresivo y de medias móviles.\nSimule este modelo en R con \\(T=1000\\) y observe la f.a.c. y f.a.c.p. estimada.\nRealice la diferencia no estacional y estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.\n\n\n\nEjercicio 6.2 Considere el modelo \\(SARIMA(0,0,1)(0,1,1)_{12}\\).\n\nEscriba explícitamente el modelo.\nEscriba el modelo en la forma de un modelo ARMA.\nDetermine el polinomio autoregresivo y de medias móviles.\nSimule este modelo en R con \\(T=1000\\) y observe la f.a.c. y f.a.c.p. estimada.\nRealice la diferencia estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.\n\n\n\nEjercicio 6.3 En la base de datos cardiovascular.csv se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.\n\nAjuste un modelo de SARIMA apropiado.\nEscriba el modelo final ajustado.\nProduzca pronósticos para enero, febrero y marzo de 2008.\n\n\n\nEjercicio 6.4 En la base de datos ventas.csv se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.\n\nAjuste un modelo de SARIMA apropiado.\nEscriba el modelo final ajustado.\nProduzca pronósticos para enero, febrero y marzo de 2006.\n\n\n\nEjercicio 6.5 En la base de datos exportacionesFOB.csv se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.\n\nAjuste un modelo de SARIMA apropiado con los datos de 2001 a 2007.\nEscriba el modelo final ajustado.\nProduzca pronósticos para los 4 meses de 2008 y calcule las medidas de precisión.\n\n\n\n\n\n\nHernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lista de ejercicios 6</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_7.html",
+    "href": "Lista_7.html",
+    "title": "Lista de ejercicios 7",
+    "section": "",
+    "text": "Ejercicio 7.1 En la base de datos llamadas_Bowerman.csv se refiere a los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976. En marzo de 1974, la Cincinnati Bell Telephone Company introdujo una política para reducir la frecuencia de las llamadas de asistencia a la guía telefónica local, según la cual a cada suscriptor se le permitía efectuar tres de estas llamadas cada mes, pero se le cargaban 20 centavos de dólar por cada llamadas adicional. Antes de marzo de 1974 no existía ese cargo.\n\nRealice análisis exploratorio de la serie y comente sus características.\nConstruya y estime un modelo de intervención apropiado para la serie.\nComente sobre el efecto de la política introducida por la Bell Telephone Company en marzo de 1974.\n\n\n\nEjercicio 7.2 En las primeras dos columnas de la base de datos crestcolgate.dat se refiere a los datos de Crest y Colgate que fue utilizado en la clase.\n\nRealice análisis exploratorio de la serie Colgate y comente sus características\nDesarrolle un modelo de intervención para la serie Colgate.\n\n\n\n\n\n\nHernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Lista de ejercicios 7</span>"
+    ]
+  },
+  {
+    "objectID": "Lista_8.html",
+    "href": "Lista_8.html",
+    "title": "Lista de ejercicios 8",
+    "section": "",
+    "text": "Ejercicio 8.1 En la base de datos petroleo.Rdata se refiere a los datos semanales del precio de la gasolina por barril desde 2000 a mediado de 2010.\n\nRealice un análisis exploratorio de la serie de precio \\(X_t\\).\nCalcule los retornos de la serie, es decir, \\(\\nabla \\ln X_t\\)\nAjuste un modelo ARIMA más apropiado para los retornos de la serie. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.\nEscriba el modelo ajustado en (c).\nAjuste un modelo GARCH a la serie de retornos. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.\nAjuste un modelo ARMA-GARCH a la serie de retornos. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.\n¿Cuál es el modelo más apropiado? Explique.\nEscriba el modelo seleccionado en (g).\n\n\n\nEjercicio 8.2 Considere la base de datos produccion1.Rdata. La base contiene dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012:\n\nbcd: bienes de consumo duradero\nbcnd: bienes de consumo no duradero\n\n\nCalcule los retornos \\(r=(r_1,r_2)\\) de las dos series (la primera diferencia de la transformación logarítmica). Analice descriptivamente las dos series \\(r1\\) y \\(r2\\).\nEstime e interprete la función de autocorrelación y autocorrelación parcial de la serie \\(r1\\).\nEstime e interprete la función de autocorrelación y autocorrelación parcial de la serie \\(r2\\).\nEstime e interprete la función de autocorrelación cruzada entre \\(r1\\) y \\(r2\\).\nBasado en el BIC, ajuste el mejor modelo VAR para \\(r\\). Explique detalladamente el procedimiento y comente sobre los supuestos de este modelo.\nEscriba el modelo ajustado en forma matricial.\nProduzca pronósticos 10 periodos para frente.\n\n\n\nEjercicio 8.3 En la base de datos temperatura.csv se refiere a los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.\n\nRealice un análisis exploratorio de la serie de temperatura.\nSepare los últimos 12 datos (enero de 1985 a diciembre de 1985) como datos de prueba y ajuste un modelo SARIMA más apropiado para la serie de temperatura de enero de 1976 a diciembre de 1984. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.\nEscriba el modelo ajustado en (b).\nProduzca pronósticos de 12 periodos para frente con el modelo ajustado y calcule el error cuadático medio (MSE).\n\n\n\n\n\n\nHernández, O. 2011. Introducción a las series cronológicas. Editorial UCR.\n\n\nHyndman, R. J., y G. Athanasopoulos. 2021. Forecasting: principles and practice. 3era ed. OTexts: Melbourne, Australia.\n\n\nMorettin, Pedro A., y Clélia M. C. Toloi. 2006. Análise de Séries Temporais. 2da ed. Blucher.\n\n\nShumway, R., y D. Stoffer. 2016. Time series Analysis and its applications. 4ta ed. Springer.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Lista de ejercicios 8</span>"
+    ]
   }
 ]

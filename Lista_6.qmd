@@ -1,0 +1,46 @@
+# Lista de ejercicios 6
+
+::: {#exr-VI1 .Exercise}
+Considere el modelo $SARIMA(0,1,2)(0,1,1)_{12}$: $$\nabla \nabla_{12} Z_t=(1-\Theta_{12} B^{12})(1-\theta_1 B-\theta_2 B^2)a_t$$
+
+a.  Escriba el modelo en la forma de un modelo ARMA.
+b.  ¿Cuál es el orden del modelo ARMA resultante?
+c.  Determine el polinomio autoregresivo y de medias móviles.
+d.  Simule este modelo en R con $T=1000$ y observe la f.a.c. y f.a.c.p. estimada.
+e.  Realice la diferencia no estacional y estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.
+
+:::
+
+::: {#exr-VI2 .Exercise}
+Considere el modelo $SARIMA(0,0,1)(0,1,1)_{12}$.
+
+a.  Escriba explícitamente el modelo.
+b.  Escriba el modelo en la forma de un modelo ARMA.
+c.  Determine el polinomio autoregresivo y de medias móviles.
+d.  Simule este modelo en R con $T=1000$ y observe la f.a.c. y f.a.c.p. estimada.
+e.  Realice la diferencia estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.
+:::
+
+::: {#exr-VI3 .Exercise}
+En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.
+
+a.  Ajuste un modelo de SARIMA apropiado.
+b.  Escriba el modelo final ajustado.
+c.  Produzca pronósticos para enero, febrero y marzo de 2008.
+:::
+
+::: {#exr-VI4 .Exercise}
+En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.
+
+a.  Ajuste un modelo de SARIMA apropiado.
+b.  Escriba el modelo final ajustado.
+c.  Produzca pronósticos para enero, febrero y marzo de 2006.
+:::
+
+::: {#exr-VI5 .Exercise}
+En la base de datos `exportacionesFOB.csv` se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.
+
+a.  Ajuste un modelo de SARIMA apropiado con los datos de 2001 a 2007.
+b.  Escriba el modelo final ajustado.
+c.  Produzca pronósticos para los 4 meses de 2008 y calcule las medidas de precisión.
+:::
