@@ -8,7 +8,6 @@ b.  ¿Cuál es el orden del modelo ARMA resultante?
 c.  Determine el polinomio autoregresivo y de medias móviles.
 d.  Simule este modelo en R con $T=1000$ y observe la f.a.c. y f.a.c.p. estimada.
 e.  Realice la diferencia no estacional y estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.
-
 :::
 
 ::: {#exr-VI2 .Exercise}

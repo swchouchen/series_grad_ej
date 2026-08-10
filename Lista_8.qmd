@@ -16,8 +16,8 @@ h.  Escriba el modelo seleccionado en (g).
 ::: {#exr-VIII2 .Exercise}
 Considere la base de datos `produccion1.Rdata`. La base contiene dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012:
 
--   bcd: bienes de consumo duradero
--   bcnd: bienes de consumo no duradero
+- bcd: bienes de consumo duradero
+- bcnd: bienes de consumo no duradero
 
 a.  Calcule los retornos $r=(r_1,r_2)$ de las dos series (la primera diferencia de la transformación logarítmica). Analice descriptivamente las dos series $r1$ y $r2$.
 b.  Estime e interprete la función de autocorrelación y autocorrelación parcial de la serie $r1$.

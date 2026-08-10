@@ -4,8 +4,7 @@
 
 El objetivo de esta práctica es entender los conceptos de estacionariedad de los modelos autorregresivos de orden $1$, AR(1), mediante simulaciones, con el fin de complementar el aprendizaje de los conceptos teóricos vistos en la clase.
 
-Considere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal:
-$$Y_t=C+\phi_1 Y_{t-1}+a_t$$ donde $C$ y $\phi_1$ son constantes desconocidas, y $a_t \sim wn(0,\sigma_a^2)$. Además, recuerde que el proceso AR(1) es estacionario si $|\phi_1|<1$.
+Considere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal: $$Y_t=C+\phi_1 Y_{t-1}+a_t$$ donde $C$ y $\phi_1$ son constantes desconocidas, y $a_t \sim wn(0,\sigma_a^2)$. Además, recuerde que el proceso AR(1) es estacionario si $|\phi_1|<1$.
 
 ::: {#exr-IIII1 .Exercise}
 Defina primero una semilla y una función para generar un proceso AR(1) con $C=0$ en donde $a_t \sim N(0,\sigma_a^2)$, usando el siguiente código:
@@ -71,12 +70,11 @@ variancias <- apply(realizaciones2,MARGIN=2,var)
 Recuerde que la media del proceso es $E(Z_t)=C \left( \frac{1}{1-\phi_1}\right)=\mu$ y la variancia es $Var(Y_t)=\left( \frac{1}{1-\phi_1^2} \right) \sigma_a^2$. Haga un análisis exploratorio con las 500 medias y variancias muestrales con medidas descriptivas e histogramas. Compárelos con la media y la variancia teórica del proceso y comente el resultado. ¿La estimación es buena?
 :::
 
-::: {#exr-IIII5 .Exercise}
+:::::: {#exr-IIII5 .Exercise}
 Extrae las primeras dos realizaciones de los datos generados y calcule la función de autocorrelación muestral y función de autocorrelación parcial muestral.
 
-
-::: columns
-::: {.column}
+::::: columns
+::: column
 ```{r}
 #| results: hide
 #| echo: true
@@ -87,7 +85,7 @@ astsa::acf2(y1)
 ```
 :::
 
-::: {.column}
+::: column
 ```{r}
 #| results: hide
 #| echo: true
@@ -97,19 +95,17 @@ y2 <- realizaciones2[,2]
 astsa::acf2(y2)
 ```
 :::
-:::
+:::::
 
 Comente los resultados y compárelos con la función de autocorrelación y autocorrelación parcial teóricas.
-:::
+::::::
 
 ::: {#exr-IIII6 .Exercise}
 Repita el @exr-IIII1 al @exr-IIII5 pero con $\phi_1=1$, es decir, el proceso generado no cumple la condición de estacionariedad. Compare los resultados con los ejercicios anteriores.
 :::
 
 ::: {#exr-IIII7 .Exercise}
-Utilice una serie generada en @exr-IIII6, llámese $Y_t$, y obtenga la serie diferenciada de la serie $Y_t$ definida como 
-$$Z_t = \Delta Y_t=Y_t-Y_{t-1}.$$ 
-Analice el gráfico lineal de $Z_t = \Delta Y_t$, así como la función de autocorrelación y la parcial muestrales.
+Utilice una serie generada en @exr-IIII6, llámese $Y_t$, y obtenga la serie diferenciada de la serie $Y_t$ definida como $$Z_t = \Delta Y_t=Y_t-Y_{t-1}.$$ Analice el gráfico lineal de $Z_t = \Delta Y_t$, así como la función de autocorrelación y la parcial muestrales.
 :::
 
 ::: {#exr-IIII8 .Exercise}
@@ -119,10 +115,3 @@ Repita el @exr-IIII6 y el @exr-IIII7 pero con $\phi_1=1.3$. Comente los resultad
 ::: {#exr-IIII9 .Exercise}
 Note que la función `gen_ar1` genera la primera observación de la serie, $Y_t$ como $Y_1 \sim N(0,\sigma^2)$. Esto implica que $Y_1$ no es autorregresivo de orden 1. Proponga una forma de corregir este problema y repita el @exr-IIII1 al @exr-IIII5. ¿Qué diferencia nota?
 :::
-
-
-
-
-
-
-
