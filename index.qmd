@@ -17,4 +17,4 @@ En esta sección, presentamos archivos de series temporales que usaremos en esta
 9.  `produccion1.Rdata`: Dos series de índice de producción industrial de los Estados Unidos de enero 1947 a diciembre de 2012.
 10. `temperatura.csv`: Los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.
 
-Descarga de datos: [link](./datos.zip)
+**Descarga de datos**: [link](./datos.zip)
