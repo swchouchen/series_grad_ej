@@ -1,15 +1,20 @@
 # Lista de ejercicios 2
 
 ::: {#exr-II1 .Exercise}
-En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.
-
-a.  Ajuste un modelo de regresión apropiado y produzca pronósticos para los 12 meses de 2008.
-b.  Analice los supuestos del modelo ajustado.
+En la base de datos `cardiovascular.csv` se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007. Ajuste un modelo de suavizamiento exponencial apropiado para la serie y pronostique para los 12 meses de 2008.
 :::
 
 ::: {#exr-II2 .Exercise}
-En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.
+En la base de datos `ventas.csv` se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005. Ajuste un modelo de suavizamiento exponencial apropiado para la serie de entrenamiento 2001-2004, y pronostique para los meses del año 2005. Calcule las medidas de precisión de estos pronósticos, y verifique manualmente los cálculos.
+:::
 
-a.  Ajuste un modelo de regresión apropiado y produzca pronósticos para los 12 meses de 2006.
+::: {#exr-II3 .Exercise}
+a.  Ajuste un modelo de regresión apropiado a los datos de `cardiovascular.csv` (2000-2007) del @exr-II1 y produzca pronósticos para los 12 meses de 2008.
 b.  Analice los supuestos del modelo ajustado.
+:::
+
+::: {#exr-II4 .Exercise}
+a.  Ajuste un modelo de regresión apropiado a los datos de `ventas.csv` (2001-2005) de @exr-II2 y produzca pronósticos para los 12 meses de 2006.
+b.  Analice los supuestos del modelo ajustado.
+c.  Compare los resultados con el ejercicio @exr-II2.
 :::
