@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -60,14 +63,14 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ffc4c3fc79587ee79da4865b6a08975e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acff971833d9769290026d534105daaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-ffc4c3fc79587ee79da4865b6a08975e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5ed507768e29e60bd1f6e02bc908bc5a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-62da5bfcf9398c84046c0276f84eca89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5ed507768e29e60bd1f6e02bc908bc5a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -383,15 +386,23 @@ div.csl-indent {
 
 
 <div id="exr-VII1" class="Exercise theorem exercise">
-<p><span class="theorem-title"><strong>Ejercicio 7.1</strong></span> En la base de datos <code>llamadas_Bowerman.csv</code> se refiere a los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976. En marzo de 1974, la Cincinnati Bell Telephone Company introdujo una política para reducir la frecuencia de las llamadas de asistencia a la guía telefónica local, según la cual a cada suscriptor se le permitía efectuar tres de estas llamadas cada mes, pero se le cargaban 20 centavos de dólar por cada llamadas adicional. Antes de marzo de 1974 no existía ese cargo.</p>
+<p><span class="theorem-title"><strong>Ejercicio 7.1</strong></span> En la base de datos <code>TSA::bluebirdlite</code> tienen dos series: ventas unitarias semanales (transformadas logarítmicamente) de papas fritas Bluebird Lite (Nueva Zelanda) <code>log.sales</code> y su precio <code>price</code> durante 104 semanas.</p>
+<ol type="a">
+<li>Ajuste un modelo ARIMA a la serie <code>log.sales</code>.</li>
+<li>Ajuste un modelo ARIMA a la serie <code>price</code>.</li>
+<li>Considere la serie <code>log.sale</code> como variable de interés. Ajuste un modelo de regresión dinámica usando el <code>price</code> como covariable.</li>
+</ol>
+</div>
+<div id="exr-VII2" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 7.2</strong></span> En la base de datos <code>llamadas_Bowerman.csv</code> se refiere a los datos de número promedio de llamadas por día (en unidades de 100 llamadas) para los meses de enero de 1962 a diciembre de 1976. En marzo de 1974, la Cincinnati Bell Telephone Company introdujo una política para reducir la frecuencia de las llamadas de asistencia a la guía telefónica local, según la cual a cada suscriptor se le permitía efectuar tres de estas llamadas cada mes, pero se le cargaban 20 centavos de dólar por cada llamadas adicional. Antes de marzo de 1974 no existía ese cargo.</p>
 <ol type="a">
 <li>Realice análisis exploratorio de la serie y comente sus características.</li>
 <li>Construya y estime un modelo de intervención apropiado para la serie.</li>
 <li>Comente sobre el efecto de la política introducida por la Bell Telephone Company en marzo de 1974.</li>
 </ol>
 </div>
-<div id="exr-VII2" class="Exercise theorem exercise">
-<p><span class="theorem-title"><strong>Ejercicio 7.2</strong></span> En las primeras dos columnas de la base de datos <code>crestcolgate.dat</code> se refiere a los datos de Crest y Colgate que fue utilizado en la clase.</p>
+<div id="exr-VII3" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 7.3</strong></span> En las primeras dos columnas de la base de datos <code>crestcolgate.dat</code> se refiere a los datos de Crest y Colgate que fue utilizado en la clase.</p>
 <ol type="a">
 <li>Realice análisis exploratorio de la serie Colgate y comente sus características</li>
 <li>Desarrolle un modelo de intervención para la serie Colgate.</li>
@@ -400,6 +411,9 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-cryer2008time" class="csl-entry" role="listitem">
+Cryer, Jonathan D., y Kung-Sik Chan. 2008. <em>Time Series Analysis: With Applications in R</em>. 2.ª ed. Springer Texts en Statistics. Springer.
+</div>
 <div id="ref-Hernandez2011" class="csl-entry" role="listitem">
 Hernández, O. 2011. <em>Introducción a las series cronológicas</em>. Editorial UCR.
 </div>

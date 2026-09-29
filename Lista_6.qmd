@@ -43,3 +43,13 @@ a.  Ajuste un modelo de SARIMA apropiado con los datos de 2001 a 2007.
 b.  Escriba el modelo final ajustado.
 c.  Produzca pronósticos para los 4 meses de 2008 y calcule las medidas de precisión.
 :::
+
+::: {#exr-VI6 .Exercise}
+En la base de datos `temperatura.csv` se refiere a los datos mensuales de temperatura en una ciudad X desde enero de 1976 hasta diciembre de 1985.
+
+a.  Realice un análisis exploratorio de la serie de temperatura.
+b.  Separe los últimos 12 datos (enero de 1985 a diciembre de 1985) como datos de prueba y ajuste un modelo SARIMA más apropiado para la serie de temperatura de enero de 1976 a diciembre de 1984. Explique detalladamente el procedimiento y comente sobre los supuestos del modelo seleccionado.
+c.  Escriba el modelo ajustado en (b).
+d.  Produzca pronósticos de 12 periodos para frente con el modelo ajustado y calcule el error cuadático medio (MSE).
+:::
+
